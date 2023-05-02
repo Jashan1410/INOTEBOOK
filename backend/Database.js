@@ -3,7 +3,7 @@ mongoose.set('strictQuery', true);
 
 async function connectToMongo() {
   try {
-    await mongoose.connect('mongodb+srv://jashan:jashan@jashan.ulgyp2g.mongodb.net/inotebook?retryWrites=true&w=majority',()=>{console.log("connect to mongodb sucessfull")})
+    await mongoose.connect('mongodb+srv://jashan:jashan@jashan.ulgyp2g.mongodb.net/inotebook?retryWrites=true&w=majority').then(()=>{console.log("connect to mongodb sucessfull")});
   } catch (error) {
     console.log("failed Connect Database")
   } 

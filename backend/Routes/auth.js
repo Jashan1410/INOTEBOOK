@@ -46,7 +46,7 @@ router.post(
           // create token for a user
 
           const data = {
-            user: {
+            Userinfo: {
               id: user.id,
             },
           };
